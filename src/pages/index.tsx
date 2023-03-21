@@ -233,10 +233,10 @@ export default function Home() {
               <div className="bg-white p-10">
                 <Image
                   src={imgLink}
-                  width={400}
-                  height={400}
+                  width={1000}
+                  height={1000}
                   alt="Generated Image"
-                  className="drop-shadow-xl"
+                  className="drop-shadow-xl w-[550px]"
                 />
                 <div
                   className="bg-green-500 px-5 py-2 mx-auto mt-5 rounded-xl text-center w-fit hover:bg-green-600 transition duration-400 cursor-pointer"
