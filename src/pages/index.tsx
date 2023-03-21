@@ -60,7 +60,7 @@ export default function Home() {
     fetch("http://localhost:5000/")
       .then((response) => setServerConnected(true))
       .catch((error) => setServerConnected(false));
-  });
+  }, []);
 
   return (
     <>
