@@ -254,7 +254,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col justify-center items-center text-black mt-16">
             <h1>&copy; Ahmad Zaki Akmal, 2023</h1>
-            <h1>(I suck at UI design)</h1>
+            {/* <h1>(I suck at UI design)</h1> */}
           </div>
         </div>
       </main>
