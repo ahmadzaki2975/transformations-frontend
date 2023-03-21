@@ -53,7 +53,7 @@ export default function Home() {
         const url = window.URL.createObjectURL(new Blob([blob]));
         setImgLink(url);
       })
-      .catch((error) => console.error(error));
+      .catch((error) => {console.error(error); alert(error.message)});
   }
 
   useEffect(() => {
