@@ -57,9 +57,11 @@ export default function Home() {
   }
 
   useEffect(() => {
-    fetch("http://localhost:5000/")
+    setInterval(() => {
+      fetch("http://localhost:5000/")
       .then((response) => setServerConnected(true))
       .catch((error) => setServerConnected(false));
+    }, 3000)
   }, []);
 
   return (
