@@ -70,10 +70,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-gray-600 flex justify-center items-center">
-        <div className="max-w-[425px] p-10 bg-slate-300 flex flex-col gap-5">
+      <main className="relative bg-[#f8faeb] flex justify-center items-center w-full overflow-hidden">
+        <div className="max-w-[425px] p-10 bg-[#f8faeb] flex flex-col gap-5 shadow-[0_0_10px_rgba(0,0,0,.4)]">
           <h1 className="text-center font-bold text-2xl">
             2D Transformations Visualizer
+          </h1>
+          <h1 className="text-center font-semibold text-xl">
+            Teknik Visualisasi Grafis
           </h1>
           <h1 className="text-center">
             Ahmad Zaki Akmal <br /> 21/480179/TK/52981
@@ -88,7 +91,7 @@ export default function Home() {
             )}
           </div>
 
-          <div className="flex flex-col bg-yellow-500 p-5 rounded-xl">
+          <div className="flex flex-col bg-gradient-to-br from-yellow-400 to-yellow-500 p-5 rounded-xl">
             <label htmlFor="n">Polygon Sides (Max 6)</label>
             <input
               className="bg-transparent font-bold text-xl px-2"
@@ -103,8 +106,8 @@ export default function Home() {
 
           <CoordinateForm n={n} />
 
-          <div className="bg-yellow-500 rounded-xl p-5">
-            <h1 className="text-center text-xl">Transformations</h1>
+          <div className="bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-xl p-5">
+            <h1 className="text-center text-xl font-bold">Transformations</h1>
             {/* //? Translation */}
             <div className="mt-5">
               <h1 className="font-bold text-center mb-2">Translation</h1>
@@ -234,7 +237,7 @@ export default function Home() {
                   className="drop-shadow-xl"
                 />
                 <div
-                  className="bg-green-500 text-white w-fit px-8 py-3 mx-auto mt-5 rounded-md"
+                  className="bg-green-500 px-5 py-2 mx-auto mt-5 rounded-xl text-center w-fit hover:bg-green-600 transition duration-400 cursor-pointer"
                   onClick={() => setImgLink("")}
                 >
                   ok
@@ -245,9 +248,13 @@ export default function Home() {
             ""
           )}
 
-          <div className="flex flex-col justify-center items-center text-black mt-20">
+          <div className="flex flex-col justify-center items-center text-black mt-5">
+            <a className="underline" href="https://github.com/ahmadzaki2975/transformations-frontend" target="_blank" rel="norel noopener">Frontend Repository</a>
+            <a className="underline" href="https://github.com/ahmadzaki2975/transformations-backend" target="_blank" rel="norel noopener">Backend Repository</a>
+          </div>
+          <div className="flex flex-col justify-center items-center text-black mt-16">
             <h1>&copy; Ahmad Zaki Akmal, 2023</h1>
-            <h1>I suck at UI design</h1>
+            <h1>(I suck at UI design)</h1>
           </div>
         </div>
       </main>

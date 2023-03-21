@@ -10,7 +10,7 @@ function Form({ index, n }) {
 
   return (
     <div
-      className={"bg-yellow-400 p-5 rounded-xl " + (index >= n ? "hidden" : "")}
+      className={"bg-gradient-to-br from-yellow-400 to-yellow-500 p-5 rounded-xl " + (index >= n ? "hidden" : "")}
     >
       <h1 className="font-bold text-center mb-2">Coordinate {index + 1}</h1>
       <div className="flex gap-1">
